@@ -1,0 +1,896 @@
+  [1m[36m (2.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (2.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateBeers (20150918011914)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "beers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "distributor" varchar, "brewery" varchar, "product" varchar, "quantity" integer, "draft" boolean, "tent" boolean, "equipment" text, "notes" text, "rep" varchar, "location" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150918011914"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-09-17 21:21:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 63ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beers" for ::1 at 2015-09-17 21:21:21 -0400
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (4.3ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 2545ms (Views: 2537.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 21:21:24 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 21:21:24 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 21:21:24 -0400
+
+
+Started GET "/beers/new" for ::1 at 2015-09-17 21:21:32 -0400
+Processing by BeersController#new as HTML
+  Rendered beers/_form.html.erb (155.1ms)
+  Rendered beers/new.html.erb within layouts/application (181.2ms)
+Completed 200 OK in 293ms (Views: 277.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 21:25:00 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.2ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 253ms (Views: 240.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 21:25:00 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 21:25:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 21:25:00 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 21:25:00 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 21:25:00 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 21:25:00 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 21:25:00 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 21:25:00 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 21:31:58 -0400
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.3ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (76.7ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (No such file or directory @ rb_sysopen - files/demo.csv):
+    47: <%
+    48: require 'csv'
+    49: 
+    50: csv_text = File.read('files/demo.csv')
+    51: csv = CSV.parse(csv_text, :headers => true)
+    52: csv.each do |row|
+    53:   Moulding.create!(row.to_hash)
+  app/views/beers/index.html.erb:50:in `read'
+  app/views/beers/index.html.erb:50:in `_app_views_beers_index_html_erb___1924895539542261485_70223131541080'
+
+
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.6ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.7ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (77.5ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (206.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (12.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (16.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (10.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (10.2ms)[0m  INSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["distributor", "savannah"], ["brewery", "Ace Cider"], ["product", "Pear"], ["quantity", 3], ["draft", "f"], ["tent", "f"], ["equipment", "jockey box"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Bear"], ["location", "3a"], ["created_at", "2015-09-18 02:42:06.057001"], ["updated_at", "2015-09-18 02:42:06.057001"]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["distributor", "savannah"], ["brewery", "Alexander Valley"], ["product", "Fall Honin"], ["quantity", 3], ["draft", "f"], ["tent", "f"], ["equipment", "co2"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Adam"], ["location", "3b"], ["created_at", "2015-09-18 02:42:06.103302"], ["updated_at", "2015-09-18 02:42:06.103302"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["distributor", "savannah"], ["brewery", "Bells"], ["product", "Two Hearted"], ["quantity", 3], ["draft", "f"], ["tent", "f"], ["equipment", "none"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Bill"], ["location", "3c"], ["created_at", "2015-09-18 02:42:06.109511"], ["updated_at", "2015-09-18 02:42:06.109511"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["distributor", "savannah"], ["brewery", "Dogfish"], ["product", "Punkin'"], ["quantity", 0], ["draft", "f"], ["tent", "f"], ["equipment", "none"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Murry"], ["location", "4d"], ["created_at", "2015-09-18 02:42:06.114755"], ["updated_at", "2015-09-18 02:42:06.114755"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["distributor", "savannah"], ["brewery", "Founders"], ["product", "Centennial"], ["quantity", 3], ["draft", "f"], ["tent", "f"], ["equipment", "co2"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Joe"], ["location", "4a"], ["created_at", "2015-09-18 02:42:06.119403"], ["updated_at", "2015-09-18 02:42:06.119403"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["distributor", "eagle rock"], ["brewery", "Duck Rabbit"], ["product", "Milk Stout"], ["quantity", 3], ["draft", "f"], ["tent", "f"], ["equipment", "co2"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Mary"], ["location", "4b"], ["created_at", "2015-09-18 02:42:06.125310"], ["updated_at", "2015-09-18 02:42:06.125310"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["distributor", "eagle rock"], ["brewery", "O'Dempsey's"], ["product", "Inukshuk IPA"], ["quantity", 1], ["draft", "f"], ["tent", "f"], ["equipment", "jockey box"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Jane"], ["location", "4c"], ["created_at", "2015-09-18 02:42:06.130428"], ["updated_at", "2015-09-18 02:42:06.130428"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["distributor", "eagle rock"], ["brewery", "Victory"], ["product", "Summer of Love"], ["quantity", 1], ["draft", "f"], ["tent", "f"], ["equipment", "jockey box"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Bentlee"], ["location", "7b"], ["created_at", "2015-09-18 02:42:06.134828"], ["updated_at", "2015-09-18 02:42:06.134828"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["distributor", "eagle rock"], ["brewery", "Laqunitus"], ["product", "Sucks"], ["quantity", 3], ["draft", "f"], ["tent", "f"], ["equipment", "none"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Robb"], ["location", "7b"], ["created_at", "2015-09-18 02:42:06.140238"], ["updated_at", "2015-09-18 02:42:06.140238"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["distributor", "eagle rock"], ["brewery", "Heavy Seas"], ["product", "Powder Monkey"], ["quantity", 1], ["draft", "f"], ["tent", "f"], ["equipment", "none"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Cersi"], ["location", "7b"], ["created_at", "2015-09-18 02:42:06.145613"], ["updated_at", "2015-09-18 02:42:06.145613"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["distributor", "eagle rock"], ["brewery", "Oskar Blues"], ["product", "Dale's Pinne"], ["quantity", 3], ["draft", "f"], ["tent", "f"], ["equipment", "co2"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Roxy"], ["location", "7b"], ["created_at", "2015-09-18 02:42:06.152542"], ["updated_at", "2015-09-18 02:42:06.152542"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["distributor", "eagle rock"], ["brewery", "Weyerbacher"], ["product", "Old Heathernn"], ["quantity", 1], ["draft", "f"], ["tent", "f"], ["equipment", "co2"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Susie"], ["location", "12a"], ["created_at", "2015-09-18 02:42:06.157873"], ["updated_at", "2015-09-18 02:42:06.157873"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["distributor", "eagle rock"], ["brewery", "Service"], ["product", "Rally Points Pits"], ["quantity", 3], ["draft", "f"], ["tent", "f"], ["equipment", "jockey box"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Cindy"], ["location", "13a"], ["created_at", "2015-09-18 02:42:06.162952"], ["updated_at", "2015-09-18 02:42:06.162952"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["distributor", "eagle rock"], ["brewery", "3 Taverns"], ["product", "Night on Ponce"], ["quantity", 3], ["draft", "f"], ["tent", "f"], ["equipment", "none"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Marsha"], ["location", "14a"], ["created_at", "2015-09-18 02:42:06.168326"], ["updated_at", "2015-09-18 02:42:06.168326"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("no") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["distributor", "robwri"], ["brewery", "Burnt Hickory"], ["product", "Mudhoney"], ["quantity", 3], ["draft", "f"], ["tent", "f"], ["equipment", "none"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Marsha"], ["location", "1d"], ["created_at", "2015-09-18 02:42:06.173806"], ["updated_at", "2015-09-18 02:42:06.173806"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+DEPRECATION WARNING: You attempted to assign a value which is not explicitly `true` or `false` ("yes") to a boolean column. Currently this value casts to `false`. This will change to match Ruby's semantics, and will cast to `true` in Rails 5. If you would like to maintain the current behavior, you should explicitly handle the values you would like cast to `false`. (called from block (2 levels) in <top (required)> at /Users/rlw_mbp/Desktop/beer/gbf/lib/tasks/rlw.rake:5)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "beers" ("distributor", "brewery", "product", "quantity", "draft", "tent", "equipment", "notes", "rep", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["distributor", "robwri"], ["brewery", "Coastal Empire"], ["product", "Savannah Brown"], ["quantity", 1], ["draft", "f"], ["tent", "f"], ["equipment", "co2"], ["notes", "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee."], ["rep", "Marsha"], ["location", "1c"], ["created_at", "2015-09-18 02:42:06.179953"], ["updated_at", "2015-09-18 02:42:06.179953"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2015-09-17 22:42:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.6ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 842ms (Views: 823.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 22:42:32 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 22:42:32 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 22:42:32 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 22:42:32 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 22:42:32 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 22:42:32 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 22:42:32 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 22:42:32 -0400
+
+
+Started GET "/beers/new" for ::1 at 2015-09-17 22:42:50 -0400
+Processing by BeersController#new as HTML
+  Rendered beers/_form.html.erb (159.0ms)
+  Rendered beers/new.html.erb within layouts/application (180.4ms)
+Completed 200 OK in 283ms (Views: 282.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 23:03:24 -0400
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.3ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 214ms (Views: 212.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:03:25 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:03:25 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:03:25 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:03:25 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:03:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:03:25 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:03:25 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:03:25 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 23:05:32 -0400
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.3ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:05:32 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:05:32 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:05:32 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:05:32 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:05:32 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:05:32 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:05:32 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:05:32 -0400
+
+
+Started GET "/beers/1" for ::1 at 2015-09-17 23:05:42 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeer Load (0.4ms)[0m  [1mSELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered beers/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 158ms (Views: 58.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 23:06:17 -0400
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.2ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:06:17 -0400
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:06:17 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:06:17 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:06:17 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:06:17 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:06:17 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:06:17 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:06:17 -0400
+
+
+Started GET "/beers/4" for ::1 at 2015-09-17 23:08:38 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered beers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/beers/4" for ::1 at 2015-09-17 23:12:59 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mBeer Load (0.2ms)[0m  SELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered beers/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 194ms (Views: 192.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:12:59 -0400
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:12:59 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:12:59 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:12:59 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:12:59 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:12:59 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:12:59 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:12:59 -0400
+
+
+Started GET "/beers/4" for ::1 at 2015-09-17 23:13:34 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBeer Load (0.2ms)[0m  [1mSELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered beers/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:13:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:13:34 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:13:34 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:13:34 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:13:34 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:13:34 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:13:34 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:13:34 -0400
+
+
+Started GET "/beers/4" for ::1 at 2015-09-17 23:13:46 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mBeer Load (0.2ms)[0m  SELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered beers/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 53.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:13:46 -0400
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:13:46 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:13:46 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:13:46 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:13:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:13:46 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:13:46 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:13:46 -0400
+
+
+Started GET "/beers/4" for ::1 at 2015-09-17 23:14:01 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBeer Load (0.2ms)[0m  [1mSELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered beers/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:14:01 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:14:01 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:14:01 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:14:01 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:14:01 -0400
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:14:01 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:14:01 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:14:01 -0400
+
+
+Started GET "/beers/4" for ::1 at 2015-09-17 23:17:09 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mBeer Load (0.1ms)[0m  SELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered beers/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:17:09 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:17:09 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:17:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:17:09 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:17:09 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:17:09 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:17:09 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:17:09 -0400
+
+
+Started GET "/beers/%3Ca%20href=" for ::1 at 2015-09-17 23:17:11 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"<a href="}
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Beer with 'id'=<a href=):
+  app/controllers/beers_controller.rb:67:in `set_beer'
+
+
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.6ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (74.6ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (170.5ms)
+
+
+Started GET "/beers/%3Ca%20href=" for ::1 at 2015-09-17 23:17:12 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"<a href="}
+  [1m[35mBeer Load (0.1ms)[0m  SELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Beer with 'id'=<a href=):
+  app/controllers/beers_controller.rb:67:in `set_beer'
+
+
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.9ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.1ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rlw_mbp/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (128.0ms)
+
+
+Started GET "/beers/4" for ::1 at 2015-09-17 23:17:53 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBeer Load (0.2ms)[0m  [1mSELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered beers/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:17:53 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:17:53 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:17:53 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:17:53 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:17:53 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:17:53 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:17:53 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:17:53 -0400
+
+
+Started GET "/beers" for ::1 at 2015-09-17 23:17:55 -0400
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.3ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/beers/4" for ::1 at 2015-09-17 23:18:03 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered beers/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:18:03 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:18:03 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:18:03 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:18:03 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:18:03 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:18:03 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:18:03 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:18:03 -0400
+
+
+Started GET "/beers" for ::1 at 2015-09-17 23:18:05 -0400
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.3ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/beers/4" for ::1 at 2015-09-17 23:18:43 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBeer Load (0.2ms)[0m  [1mSELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered beers/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:18:43 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:18:43 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:18:43 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:18:43 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:18:43 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:18:43 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:18:43 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:18:43 -0400
+
+
+Started GET "/beers" for ::1 at 2015-09-17 23:18:49 -0400
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.3ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/beers" for ::1 at 2015-09-17 23:20:11 -0400
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.4ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 207ms (Views: 205.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:20:12 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:20:12 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:20:12 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:20:12 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:20:12 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:20:12 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:20:12 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:20:12 -0400
+
+
+Started GET "/beers" for ::1 at 2015-09-17 23:20:14 -0400
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.2ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 92ms (Views: 90.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:20:14 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:20:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:20:14 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:20:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:20:14 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:20:14 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:20:14 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:20:14 -0400
+
+
+Started GET "/beers" for ::1 at 2015-09-17 23:20:54 -0400
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.3ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:20:54 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:20:54 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:20:54 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:20:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:20:54 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:20:54 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:20:54 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:20:54 -0400
+
+
+Started GET "/beers/4" for ::1 at 2015-09-17 23:21:01 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mBeer Load (0.2ms)[0m  SELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered beers/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 82ms (Views: 80.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/beers/1" for ::1 at 2015-09-17 23:21:07 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered beers/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/beers/1" for ::1 at 2015-09-17 23:25:15 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBeer Load (0.1ms)[0m  SELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered beers/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 185ms (Views: 183.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:25:16 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:25:16 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:25:16 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:25:16 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:25:16 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:25:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:25:16 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:25:16 -0400
+
+
+Started GET "/beers/1" for ::1 at 2015-09-17 23:25:27 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeer Load (0.2ms)[0m  [1mSELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered beers/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-17 23:25:27 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 23:25:27 -0400
+
+
+Started GET "/assets/scaffolds.self-6f4165264952c429ece0b981ab6b96b66854e5ce11b22750ac9d5a1cfdb914a8.css?body=1" for ::1 at 2015-09-17 23:25:27 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-17 23:25:27 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 23:25:27 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 23:25:27 -0400
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-17 23:25:27 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-17 23:25:27 -0400
+
+
+Started GET "/beers/1/edit" for ::1 at 2015-09-17 23:26:13 -0400
+Processing by BeersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBeer Load (0.1ms)[0m  SELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered beers/_form.html.erb (5.7ms)
+  Rendered beers/edit.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 100ms (Views: 98.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/beers/1" for ::1 at 2015-09-17 23:26:35 -0400
+Processing by BeersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YVRHPe9ZcvD5WD3DlOE6Kp52FbdvHN4sliXS1aC/aGLTyEEJo/NllhspnMwY1S5MW2GfqXc5Ys8vKkb9ylnO6w==", "beer"=>{"distributor"=>"savannah", "brewery"=>"Ace Cider", "product"=>"Pear", "quantity"=>"3", "draft"=>"0", "tent"=>"0", "equipment"=>"jockey box", "notes"=>"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.", "rep"=>"Bear", "location"=>"3a"}, "commit"=>"Update Beer", "id"=>"1"}
+  [1m[36mBeer Load (0.2ms)[0m  [1mSELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/beers/1
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/beers/1" for ::1 at 2015-09-17 23:26:35 -0400
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBeer Load (0.1ms)[0m  SELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered beers/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/beers" for ::1 at 2015-09-18 09:00:41 -0400
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.6ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 920ms (Views: 918.3ms | ActiveRecord: 0.6ms)
