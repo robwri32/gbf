@@ -1623,3 +1623,786 @@ Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1db
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-18 13:47:51 -0400
+
+
+Started GET "/" for 71.14.12.42 at 2015-09-18 18:04:12 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.3ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 613ms (Views: 598.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 71.14.12.42 at 2015-09-18 18:04:13 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:04:13 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:04:13 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:04:13 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:04:13 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:04:13 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 71.14.12.42 at 2015-09-18 18:04:13 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:04:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 71.14.12.42 at 2015-09-18 18:04:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/beers/1" for 71.14.12.42 at 2015-09-18 18:04:21 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeer Load (0.5ms)[0m  [1mSELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered beers/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 83ms (Views: 69.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:04:24 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.3ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/beers/1" for 71.14.12.42 at 2015-09-18 18:04:26 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeer Load (0.2ms)[0m  [1mSELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered beers/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/beers/1/edit" for 71.14.12.42 at 2015-09-18 18:04:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBeer Load (0.2ms)[0m  SELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered beers/_form.html.erb (34.7ms)
+  Rendered beers/edit.html.erb within layouts/application (36.8ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 89ms (Views: 87.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:04:38 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.4ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 78ms (Views: 75.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 71.14.12.42 at 2015-09-18 18:06:01 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.4ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 67.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:08:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.4ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 80ms (Views: 78.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.self-1f5d37230e7484a1f12cf31fa6caae1cc0c46aca2d6521c66c15df029e99e26a.css?body=1" for 71.14.12.42 at 2015-09-18 18:08:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:08:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:08:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:08:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:08:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:08:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 71.14.12.42 at 2015-09-18 18:08:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:08:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 71.14.12.42 at 2015-09-18 18:08:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:09:02 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.3ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-6fead5648f38ff071004b988f6ed638ea2f63f52e5e181432cd14f002dc10d73.css?body=1" for 71.14.12.42 at 2015-09-18 18:09:03 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:03 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:03 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:09:04 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:04 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:04 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:04 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:04 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:09:04 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:09:16 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.3ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 100ms (Views: 98.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:09:16 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:16 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:16 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:16 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-97715fa93bfc7e9a9810154b76930fcc7878d1eb08e53301c87c16653155c757.css?body=1" for 71.14.12.42 at 2015-09-18 18:09:16 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:09:16 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:16 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:16 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:16 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/beers/1" for 71.14.12.42 at 2015-09-18 18:09:26 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBeer Load (0.2ms)[0m  SELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered beers/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:09:33 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.3ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 75ms (Views: 73.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:09:34 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-97715fa93bfc7e9a9810154b76930fcc7878d1eb08e53301c87c16653155c757.css?body=1" for 71.14.12.42 at 2015-09-18 18:09:34 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:09:34 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:34 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:34 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:34 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:34 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:35 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:36 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:09:55 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.4ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:09:56 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:09:56 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-97715fa93bfc7e9a9810154b76930fcc7878d1eb08e53301c87c16653155c757.css?body=1" for 71.14.12.42 at 2015-09-18 18:09:56 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:56 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:56 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:56 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:56 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:56 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:09:56 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:10:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.3ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:10:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:10:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-97715fa93bfc7e9a9810154b76930fcc7878d1eb08e53301c87c16653155c757.css?body=1" for 71.14.12.42 at 2015-09-18 18:10:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:10:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:10:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:10:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 71.14.12.42 at 2015-09-18 18:10:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 71.14.12.42 at 2015-09-18 18:10:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:10:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 71.14.12.42 at 2015-09-18 18:10:36 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.3ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:11:23 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.5ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:11:23 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-97715fa93bfc7e9a9810154b76930fcc7878d1eb08e53301c87c16653155c757.css?body=1" for 71.14.12.42 at 2015-09-18 18:11:23 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:11:23 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:11:23 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 71.14.12.42 at 2015-09-18 18:11:23 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:11:23 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:11:23 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:11:23 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 71.14.12.42 at 2015-09-18 18:11:23 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:15:05 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.5ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 85ms (Views: 83.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:15:05 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-97715fa93bfc7e9a9810154b76930fcc7878d1eb08e53301c87c16653155c757.css?body=1" for 71.14.12.42 at 2015-09-18 18:15:05 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:15:05 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:15:05 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:15:05 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:15:05 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 71.14.12.42 at 2015-09-18 18:15:05 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:15:05 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 71.14.12.42 at 2015-09-18 18:15:05 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:15:20 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.4ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:15:20 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-97715fa93bfc7e9a9810154b76930fcc7878d1eb08e53301c87c16653155c757.css?body=1" for 71.14.12.42 at 2015-09-18 18:15:20 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:15:20 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:15:20 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:15:20 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:15:20 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 71.14.12.42 at 2015-09-18 18:15:20 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:15:20 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 71.14.12.42 at 2015-09-18 18:15:20 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:17:03 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.4ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 117ms (Views: 115.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:17:03 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 71.14.12.42 at 2015-09-18 18:17:03 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:17:04 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 71.14.12.42 at 2015-09-18 18:17:04 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:17:04 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-8273dad52dd0e79079d3e32db2c4ffc7b575d1afbd9f6f108a8bd966f0b1a69e.css?body=1" for 71.14.12.42 at 2015-09-18 18:17:04 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:17:04 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:17:04 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:17:04 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:17:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.9ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:17:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:17:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:17:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:17:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:17:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-8273dad52dd0e79079d3e32db2c4ffc7b575d1afbd9f6f108a8bd966f0b1a69e.css?body=1" for 71.14.12.42 at 2015-09-18 18:17:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:17:14 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/beers/12" for 71.14.12.42 at 2015-09-18 18:17:21 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mBeer Load (0.1ms)[0m  SELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", 12]]
+  Rendered beers/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:17:26 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.5ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/beers/3" for 71.14.12.42 at 2015-09-18 18:17:32 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBeer Load (0.2ms)[0m  SELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered beers/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:30:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.3ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:30:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-8273dad52dd0e79079d3e32db2c4ffc7b575d1afbd9f6f108a8bd966f0b1a69e.css?body=1" for 71.14.12.42 at 2015-09-18 18:30:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:30:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:30:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:30:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:30:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:30:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 71.14.12.42 at 2015-09-18 18:30:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 71.14.12.42 at 2015-09-18 18:30:29 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:31:48 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.5ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 67ms (Views: 65.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.self-8273dad52dd0e79079d3e32db2c4ffc7b575d1afbd9f6f108a8bd966f0b1a69e.css?body=1" for 71.14.12.42 at 2015-09-18 18:31:48 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 71.14.12.42 at 2015-09-18 18:31:48 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:31:48 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 71.14.12.42 at 2015-09-18 18:31:49 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:31:49 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:31:49 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:31:49 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:31:49 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:31:49 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/beers" for 71.14.12.42 at 2015-09-18 18:32:08 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.5ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 71.14.12.42 at 2015-09-18 18:32:08 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-8273dad52dd0e79079d3e32db2c4ffc7b575d1afbd9f6f108a8bd966f0b1a69e.css?body=1" for 71.14.12.42 at 2015-09-18 18:32:09 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 71.14.12.42 at 2015-09-18 18:32:09 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-726c0a6d1b306a5a3da24c1336b4fde87cf664fbd427293c2196162e338c730d.css?body=1" for 71.14.12.42 at 2015-09-18 18:32:09 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 71.14.12.42 at 2015-09-18 18:32:09 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 71.14.12.42 at 2015-09-18 18:32:09 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 71.14.12.42 at 2015-09-18 18:32:09 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-table-filter.self-a66cbf327de75e6a73653aa562df1dbde51a48126d4db89cd817039c81a0b046.js?body=1" for 71.14.12.42 at 2015-09-18 18:32:09 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 71.14.12.42 at 2015-09-18 18:32:09 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 71.14.12.42 at 2015-09-18 18:33:02 +0000
+Cannot render console from 71.14.12.42! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.4ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered beers/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.4ms)
