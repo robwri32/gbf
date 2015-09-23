@@ -2,8 +2,10 @@
 
 == TODO
 
-add paperclip for file uploads
-add devise for user registrations
-add in filler content for all brews notes
+* add paperclip for file uploads
 
-find a viable svg map that allows for zoom via url parameters. 
+* add devise for user registrations
+
+* add in filler content for all brews notes
+
+* find a viable svg map that allows for zoom via url parameters. 
