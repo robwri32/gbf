@@ -10,5 +10,5 @@
 require 'csv'
 
 CSV.foreach("db/demo.csv", { encoding: "UTF-8", headers: true, header_converters: :symbol, converters: :all}) do |row|
-  Beer2.create(row.to_hash)
+  Beer.create(row.to_hash)
 end

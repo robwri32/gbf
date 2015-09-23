@@ -1,60 +1,77 @@
 <p id="notice"><%= notice %></p>
 
+<div id="beer_info_main_box">
 
 <div class="row">
-  <div class="col-md-8">.col-md-8</div>
-  <div class="col-md-4">.col-md-4</div>
+
+  
+  
+  <div class="col-xs-12 col-md-8">
+    <p>
+      <strong>Distributor:</strong>
+      <%= @beer.distributor %>
+    </p>
+    
+    <p>
+      <strong>Brewery:</strong>
+      <%= @beer.brewery %>
+    </p>
+    
+    <p>
+      <strong>Product:</strong>
+      <%= @beer.product %>
+    </p>
+    
+    <p>
+      <strong>Quantity:</strong>
+      <%= @beer.quantity %>
+    </p>
+    
+    <p>
+      <strong>Draft:</strong>
+      <%= @beer.draft %>
+    </p>
+    
+    <p>
+      <strong>Tent:</strong>
+      <%= @beer.tent %>
+    </p>
+    
+    <p>
+      <strong>Equipment:</strong>
+      <%= @beer.equipment %>
+    </p>
+    
+    <p>
+      <strong>Notes:</strong>
+      <%= @beer.notes %>
+    </p>
+    
+    <p>
+      <strong>Rep:</strong>
+      <%= @beer.rep %>
+    </p>
+    
+    <p>
+      <strong>Location:</strong>
+      <%= @beer.location %>
+    </p>
+    
+    <%= link_to 'Edit', edit_beer_path(@beer), class:"btn btn-primary" %> 
+    <%= link_to 'Back', beers_path, class:"btn btn-primary" %>
+  </div>
+  
+  
+  
+  <div class="col-xs-6 col-md-4">
+    <div id="beer_image"></div><%= image_tag("generic_beer.png", size: "175px", class:"img-responsive") %></div>
+    <div id="beer_image_title"><%= @beer.product %></div>
+  </div>
 </div>
 
-<p>
-  <strong>Distributor:</strong>
-  <%= @beer.distributor %>
-</p>
+    
+<div class="row">    
+    <div id ="beer_drilldown_map"><%= image_tag("map.png", size: "100%", class:"img-responsive") %></div>
+</div>
 
-<p>
-  <strong>Brewery:</strong>
-  <%= @beer.brewery %>
-</p>
-
-<p>
-  <strong>Product:</strong>
-  <%= @beer.product %>
-</p>
-
-<p>
-  <strong>Quantity:</strong>
-  <%= @beer.quantity %>
-</p>
-
-<p>
-  <strong>Draft:</strong>
-  <%= @beer.draft %>
-</p>
-
-<p>
-  <strong>Tent:</strong>
-  <%= @beer.tent %>
-</p>
-
-<p>
-  <strong>Equipment:</strong>
-  <%= @beer.equipment %>
-</p>
-
-<p>
-  <strong>Notes:</strong>
-  <%= @beer.notes %>
-</p>
-
-<p>
-  <strong>Rep:</strong>
-  <%= @beer.rep %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @beer.location %>
-</p>
-
-<%= link_to 'Edit', edit_beer_path(@beer) %> |
-<%= link_to 'Back', beers_path %>
+</div>

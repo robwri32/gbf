@@ -1,17 +1,129 @@
 distributor,brewery,product,quantity,draft,tent,equipment,notes,rep,location
-savannah,Ace Cider,Pear,3 cases,yes,no,jockey box,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Bear,3a
-savannah,Alexander Valley,Fall Honin,3 cases,yes,no,co2,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Adam,3b
-savannah,Bells,Two Hearted,3 cases,no,yes,none,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Bill,3c
-savannah,Dogfish,Punkin', 1/4 bbl,yes,yes,none,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Murry,4d
-savannah,Founders,Centennial,3 cases-bottles,no,no,co2,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Joe,4a
-eagle rock,Duck Rabbit,Milk Stout,3 cases,no,yes,co2,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Mary,4b
-eagle rock,O'Dempsey's,Inukshuk IPA, 1/4 bbl,no,no,jockey box,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Jane,4c
-eagle rock,Victory,Summer of Love, 1/4 bbl,yes,yes,jockey box,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Bentlee,7b
-eagle rock,Laqunitus,Sucks,3 cases-bottles,no,no,none,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Robb,7b
-eagle rock,Heavy Seas,Powder Monkey, 1/4 bbl,no,no,none,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Cersi,7b
-eagle rock,Oskar Blues,Dale's Pinne,3 cases,yes,yes,co2,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Roxy,7b
-eagle rock,Weyerbacher,Old Heathernn, 1/4 bbl,no,no,co2,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Susie,12a
-eagle rock,Service,Rally Points Pits,3 cases,yes,no,jockey box,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Cindy,13a
-eagle rock,3 Taverns,Night on Ponce,3 cases,no,no,none,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Marsha,14a
-robwri,Burnt Hickory,Mudhoney,3 cases-bottles,no,yes,none,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Marsha,1d
-robwri,Coastal Empire,Savannah Brown, 1/4 bbl,yes,yes,co2,"The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",Marsha,1c
+Savannah,Ace Cider,Pear,3 cases each,n,sav tent A (unbranded),,Ace rep will be there and is flying in just for the event!,,3c
+Savannah,Ace Cider,Pumpkin,,n,,,,,4d
+Savannah,Ace Cider,Pineapple,,n,,,,,2a
+Savannah,Alexander Valley,Fall Honin,3 cases each,y,sav tent A,,,,1a
+Savannah,Alexander Valley,Hop Criss,,y,,,,,5a
+Savannah,Alexander Valley,Barney Flats,,y,,,,,5c
+Savannah,Bells,Two Hearted,1/4 bbl,n,branded,,Bill has moved to TN (not sure if anyone is coming). But they do have the branded tent.,,7d
+Savannah,Bells,Oktoberfest,1/4 bbl,y,,,,,1e
+Savannah,Bells,Kalamazoo Stout,3 cases - bottles,n,,,,,2c
+Savannah,Dogfish,Punkin',3 cases each,y,Sav Tent D,,all bottles,,4b
+Savannah,Dogfish,90 min,,n,,,,,8d
+Savannah,Dogfish,Indian Brown,,y,,,,,3d
+Savannah,Founders,Centennial,,y,branded,,,,2d
+Savannah,Founders,All Day,,n,,,,,1d
+Savannah,Founders,Dirty Bastard,3 cases each,y,branded,,,,a9
+Savannah,Founders,Rubeus,,n,,,,,a7
+Savannah,Duck Rabbit,Milk Stout,1/4 bbl,n,branded,j/b provided,,,3c
+Savannah,Duck Rabbit,Hoppy Bunny,1/4 bbl,n,,j/b provided,,,4d
+Savannah,Duck Rabbit,Amber,3 cases - bottles,y,,,,,2a
+Savannah,O'Dempsey's,Inukshuk IPA,3 cases each,y,branded,,,,1a
+Savannah,O'Dempsey's,Black Hearted,,y,,,,,5a
+Savannah,O'Dempsey's,Big Red Ale,,n,,,,,5c
+Savannah,Victory,Summer of Love,3 cases each,y,Sav tent B,,,,7d
+Savannah,Victory,Storm King,,n,,,,,1e
+Savannah,Victory,Hop Devil,,y,,,,,2c
+Savannah,lagunitus,Sucks,3 cases each,n,branded,,will bring a cornhole set ,Adam  - lagunitas rep,4b
+Savannah,lagunitus,Lil Sumpin,,y,,,,,8d
+Savannah,lagunitus,Daytime IPA,,y,,,,,3d
+Savannah,Heavy Seas,Powder Monkey,3 cases each,n,Sav Tent C,,,,2d
+Savannah,Heavy Seas,Riptide,,y,,,,,1d
+Savannah,Heavy Seas,Oktoberfest,,n,,,,,a9
+Savannah,Oskar Blues,Dale's Pinne,3 cases each,n,Sav Tent C,,,,a7
+Savannah,Oskar Blues,Gubna,,n,,,,,3c
+Savannah,Oskar Blues,Gknight,,y,,,,,4d
+Savannah,Weyerbacher,Old Heathernn,3 cases each,y,Sav Tent B,,could take out if we need to  leave out a brand,,2a
+Savannah,Weyerbacher,MerryMonks,,y,,,,,1a
+Savannah,Weyerbacher,Pumpkin,,n,,,,,5a
+Savannah,Service,Rally Point Pils,3 cases each,y,10x 20 rented ,,,,5c
+Savannah,Service,Compass Rose,,n,"""",,,,7d
+Savannah,Service,Ground Pounde,,y,"""",,,,1e
+Savannah,3 Taverns,"Night on Ponce, Night in Brussells, Quasimodo",3 cases each,n,"""",,,,2c
+Savannah,4 Taverns,,,y,,,,,4b
+Savannah,5 Taverns,,,y,,,,,8d
+Savannah,Burnt Hickory,"Mudhoney, Ezekiels Wheel,Cannon Draggar",3 cases each,n,"""",,will see if Digits is avail ,,3d
+Savannah,Burnt Hickory,,,y,,,,,2d
+Savannah,Burnt Hickory,,,n,,,,,1d
+Savannah,Coastal Empire,"Savannah Brown,Tybee blonde, Southern Praline",3 cases each,n,"""",,,,a9
+Savannah,Coastal Empire,Tybee Blonde,,n,,,,,a7
+Savannah,Coastal Empire,Southern Praline,,y,,,,,3c
+Eagle Rock,AVIATOR BREWING,AV HOG WILD 4/6 CAN,4 cases,y,RENTED,,,,4d
+Eagle Rock,AVIATOR BREWING,AV PUMPKIN BEAST 4/6 CAN,"""",y,,,,,2a
+Eagle Rock,EAGLE CREEK BREWING,ECRK GRASS ROOT 4/6C,4 cases,n,RENTED,,,,1a
+Eagle Rock,EAGLE CREEK BREWING,ECRK SPOT TAIL 4/6CN,"""",y,,,,,5a
+Eagle Rock,JAILHOUSE BREWING CO,JAIL SLAMMER WHT 4/6,4 cases,n,RENTED,,,,5c
+Eagle Rock,JAILHOUSE BREWING CO,JAIL MISDEMEANOR 4/6,"""",y,,,,,7d
+Eagle Rock,JAILHOUSE BREWING CO,JAIL MUGSHOT IPA 4/6,"""",n,,,,,1e
+Eagle Rock,LAZY MAGNOLIA BREWING CO,LM STH PECAN 4/6/12L,4 cases,y,RENTED,,,,2c
+Eagle Rock,LAZY MAGNOLIA BREWING CO,LM SO HOPS' 4/6/12LN,"""",y,,,,,4b
+Eagle Rock,MAGIC HAT,MH CANTASTIC 2/12 CN,4 cases,n,Magic Hat branded,,,,8d
+Eagle Rock,MAGIC HAT,M HAT ELE PEEL 4/6,"""",y,,,,,3d
+Eagle Rock,MAGIC HAT,M HAT WILHELM SCR4/6,"""",n,,,,,2d
+Eagle Rock,MCKENZIES HARD CIDER,MCKENZIE ORIGINAL4/6,,n,Mckenzies branded,,Richard Miziack (flying in from Tampa),,1d
+Eagle Rock,MCKENZIES HARD CIDER,MCKENZIE BLK CHRY4/6,,n,,,,,a9
+Eagle Rock,MCKENZIES HARD CIDER,MCKENZIE SEASONAL4/6,,y,,,,,a7
+Eagle Rock,MCKENZIES HARD CIDER,MCKENZIE PUMPKIN 4/6,,y,,,,,3c
+Eagle Rock,MONDAY NIGHT BREWING,MNB DRAFT KILT4/6 LN,,y,Mon Night branded,,,,4d
+Eagle Rock,MONDAY NIGHT BREWING,MNB EYE PATCH 4/6 LN,,n,,,,,2a
+Eagle Rock,MONDAY NIGHT BREWING,SERRANO EYE PATCH4/6,,y,,,,,1a
+Eagle Rock,MONDAY NIGHT BREWING,MNB GUN SHOW 12/22NR,,n,,,,,5a
+Eagle Rock,NEW BELGIUM,NB 1554 BLK 4/6/12NR,,y,New Belgium branded tent,,,,5c
+Eagle Rock,NEW BELGIUM,NB RAMPANT 4/6/12NR,,n,,,,,7d
+Eagle Rock,NEW BELGIUM,NB PUMPKICK 4/6 NR,,y,,,,,1e
+Eagle Rock,NEW BELGIUM,NB SNAPSHOT 4/6/12NR,,y,,,,,2c
+Eagle Rock,NEW BELGIUM,NB SLOW RIDE4/6/12NR,,n,,,,,4b
+Eagle Rock,RED HARE BREWING CO,RDHARE COTTONTAIL4/6,,y,Red Hare branded,,,,8d
+Eagle Rock,RED HARE BREWING CO,RD HR WTRSHIP 4/6 CN,,n,,,,,3d
+Eagle Rock,RED HARE BREWING CO,RD HR GANGWAY 4/6 CN,,n,,,,,2d
+Eagle Rock,RED HARE BREWING CO,RD HR LONGDAY 4/6 CN,,n,,,,,1d
+Eagle Rock,SAUTEE HARD CIDER CO,BULLDOG CIDER APL 4/6,,y,RENTED,SAUTEE & TN BRANDING TOGETHER,,,a9
+Eagle Rock,SAUTEE HARD CIDER CO,BULLDOG CIDER PCH 4/6 LN,,y,,,,,a7
+Eagle Rock,SOUTHERN TIER,ST 2XIPA 4/6/12NR,,y,Southern Tier branded,,,,3c
+Eagle Rock,SOUTHERN TIER,ST RIGHT O WAY 4/6LN,,n,its two 5x5 tents put together,,,,4d
+Eagle Rock,SOUTHERN TIER,ST PUMKING 12/22NR,,y,,,,,2a
+Eagle Rock,SOUTHERN TIER,ST WARLOCK 12/22NR,,n,,,,,1a
+Eagle Rock,TENNESSEE BRANDING CO,WILD GINGER 4/6 CAN,,y,rented,,,,5a
+Eagle Rock,BLUE POINT BREWERY,BL PT PUMPKIN ALE1/6,,n,Blue point branded,,Bob setup,,5c
+Eagle Rock,BLUE POINT BREWERY,BL PT OKTOBERFEST1/6,,y,,,Bob setup,,7d
+Eagle Rock,BLUETARP BREWING CO,BLTARP FUNK WEISS1/4,,y,RENTED,,Bob setup,,1e
+Eagle Rock,BLUETARP BREWING CO,BLTARP TR THUNDER1/4,,n,,,Bob setup,,2c
+Eagle Rock,CHERRY STREET BREWING,CS W LA HOPAWAY 1/4,,y,RENTED,,"Bob setup: CHERRY ST, EAGLE CREEK & FANNIN TOGETHER",,4b
+Eagle Rock,CHERRY STREET BREWING,CS DLN DBL BLG BR1/4,,n,,,Bob setup,,8d
+Eagle Rock,CHERRY STREET BREWING,CS COCONUT PORTER1/4,,n,,,Bob setup,,3d
+Eagle Rock,EAGLE CREEK BREWING,ECRK GA TEA PARTY 1/6,,n,RENTED,,Bob setup,,2d
+Eagle Rock,FANNIN BREWING COMPANY,FN TOCCOA BRN 1/6,,y,RENTED,,Bob setup,,1d
+Eagle Rock,FANNIN BREWING COMPANY,FN PICKIN N GRINNIN 1/6,,y,,,Bob setup,,a9
+Eagle Rock,GOOSE ISLAND,GOOSE OKTOBERFEST 1/6,,y,Goose Island branded,,Bob setup,,a7
+Eagle Rock,GOOSE ISLAND,GOOSE RAMBLER IPA1/6,,n,,,Bob setup,,3c
+Eagle Rock,GOOSE ISLAND,GOOSE AUTUMN 1/6,,y,,,Bob setup,,4d
+Eagle Rock,JEKYLL BREWING,JKL BIGCRK KOLSCH1/6,,n,JEKYLL BRANDED,,Bob setup,,2a
+Eagle Rock,JEKYLL BREWING,JKL HOP DIGGITY 1/6,,y,,,Bob setup,,1a
+Eagle Rock,JEKYLL BREWING,JKL COOTER BRN 1/6KG,,n,,,Bob setup,,5a
+Eagle Rock,JEKYLL BREWING,JKL MERICAN AMB 1/6,,y,,,Bob setup,,5c
+Eagle Rock,LONERIDER BREWING COMPANY,LR HOP RODEIN ON1/6K,,y,Lonerider branded,,Bob setup,,7d
+Eagle Rock,LONERIDER BREWING COMPANY,LR ADDIES REVNG 1/6K,,n,,,Bob setup,,1e
+Eagle Rock,REFORMATION BREWERY,CADENCE 1/4 KEG,,y,RENTED,,Bob setup,,2c
+Eagle Rock,REFORMATION BREWERY,ATLAS 1/4 KEG,,n,,,Bob setup,,4b
+Eagle Rock,REFORMATION BREWERY,PROVIDENCE 1/4 KEG,,n,,,Bob setup,,8d
+Eagle Rock,REFORMATION BREWERY,STARK 1/4 KEG,,n,,,Bob setup,,3d
+Eagle Rock,CHERRY STREET BREWING,CS RIVERS UP IPA 1/2,,y,,,VIP,,2d
+Eagle Rock,JAILHOUSE BREWING CO,JAIL ALIBI 1/2,,y,,,VIP,,1d
+Eagle Rock,RED HARE BREWING CO,RDHR JC GANGWAY 22N,,y,,,VIP,,a9
+Eagle Rock,SOUTHERN TIER,ST CHOKLAT ORANJ 22N,,n,,,VIP,,a7
+Eagle Rock,CRAFT BREWERS ALNCE,WID 2012 BRRRBON 22N,,y,,,VIP,,3c
+Eagle Rock,LAZY MAGNOLIA BREWING CO,LM 10 12/750ML,,n,,,VIP,,4d
+Eagle Rock,BAYOU TECHE BREWING,BIERE JOI DUBBLE 1/6,,y,,,VIP,,2a
+Eagle Rock,FANNIN BREWING COMPANY,FN HIVE KICKR 1/6,,n,,,VIP,,1a
+Eagle Rock,GOOSE ISLAND,GS MAT LAMBICUS 1/6K,,y,,,VIP,,5a
+Eagle Rock,LONERIDER BREWING COMPANY,LR TOMBSTN RSV 24/16,,y,,,VIP,,5c
+Eagle Rock,NEW BELGIUM,NB LA FOLIE 12/22NR,,n,,,VIP,,7d
+Eagle Rock,NEW BELGIUM,NB 3FLYD GRATZER22OZ,,y,,,VIP,,1e
+Eagle Rock,NEW BELGIUM,NB YUZU BERLINER22NR,,n,,,VIP,,2c
+Eagle Rock,REFORMATION BREWERY,DECLARATION 1/4 KEG,,n,,,VIP,,4b
+Eagle Rock,FANNIN BREWING COMPANY,FN RARE HELEN,(2) 1/4 BL,n,,,DRAFTSERV,,8d
+Eagle Rock,JAILHOUSE BREWING CO,JAIL RESTRAIN ,(2) 1/4 BL,y,,,DRAFTSERV,,3d
+Eagle Rock,JEKYLL BREWING,JKL OKTOBERFEST,(2) 1/4 BL,y,,,DRAFTSERV,,2d
+Eagle Rock,MONDAY NIGHT BREWING,MNB BLORG BLIND PIRATE ,(2) 1/4 BL,y,,,DRAFTSERV,,1d
+Eagle Rock,RED HARE BREWING CO,RDHARE OKTOBERFST,(2) 1/4 BL,n,,,DRAFTSERV,,a9
+Eagle Rock,CHERRY STREET BREWING,CS PUMPKIN PIE ,(2) 1/4 BL,y,,,DRAFTSERV,,a7
